@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Online Store</h1>
+    </header>
+    <h2 style="margin-left: 9%;">Available Items</h2>
+    <div class="container">
+        
+        <div  class="items">
+
+            <div class="item" id="item1">
+                <img class="imgs" id="i1" src="./images/1.jpeg" alt="">
+                <h3>T-shirt</h3>
+                <p>Price: $200</p>
+                <button onclick="addToCart('item1')">Add to Cart</button>
+            </div>
+            <div class="item" id="item2">
+                <img class="imgs" src="./images/23waut_r0327_mdn.jpg" alt="">
+                <h3>Jeans</h3>
+                <p>Price: $250</p>
+                <button onclick="addToCart('item2')">Add to Cart</button>
+            </div>
+            <div class="item" id="item3">
+                <img class="imgs" src="./images/3.jpeg" alt="">
+                <h3>Sneakers</h3>
+                <p>Price: $80</p>
+                <button onclick="addToCart('item3')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="cart" id="cart">
+            <h2>Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+            <button onclick="checkout()">checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
